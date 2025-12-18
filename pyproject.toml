@@ -1,0 +1,20 @@
+[project]
+name = "mlx-screendescribe"
+version = "0.1.0"
+description = "Automatic screenshot time tracking with MLX vision-language models"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mlx>=0.0.0",
+    "mlx-vlm>=0.0.0",
+    "Pillow>=10.0.0",
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "huggingface_hub>=0.20.0",
+    "rumps>=0.4.0",
+]
+
+[tool.setuptools]
+# Don't use project.dependencies as install_requires
+# Dependencies are managed by uv, not setuptools
+py-modules = []
